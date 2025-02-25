@@ -53,11 +53,11 @@ const  handleOnChange = (event) => {
     <textarea className="form-control" value={text} onChange={handleOnChange}  
      id="exampleFormControlTextarea1" rows="7" style={{backgroundColor: props.mode=='dark'?'grey':'white', color: props.mode=='dark'?'white':'black'}}></textarea>
     </div>
-    <button className="btn btn-primary mx-2 my-3" onClick={handleUpClick}>Convert To UPPERCASE</button>
-    <button className="btn btn-primary mx-2 my-3" onClick={handleLoClick}>Convert To lowercase</button>
-    <button className="btn btn-primary mx-2 my-3 " onClick={handleCamelClick}>Convert To Camelcase</button>
-    <button className="btn btn-primary mx-2 my-3" onClick={handleExtraSpaces}>Remove Extra Spaces</button>
-    <button className="btn btn-primary mx-2 my-3 " onClick={handleCopy}>Copy Text</button>
+    <button className="btn btn-primary mx-3 my-3" onClick={handleUpClick}>Convert To UPPERCASE</button>
+    <button className="btn btn-primary mx-3 my-3" onClick={handleLoClick}>Convert To lowercase</button>
+    <button className="btn btn-primary mx-3 my-3 " onClick={handleCamelClick}>Convert To Camelcase</button>
+    <button className="btn btn-primary mx-3 my-3" onClick={handleExtraSpaces}>Remove Extra Spaces</button>
+    <button className="btn btn-primary mx-3 my-3 " onClick={handleCopy}>Copy Text</button>
     </div>
     <div className="container my-3" style={{color: props.mode=='dark'?'white':'black'}}>
       <h2>Your text summary</h2>
