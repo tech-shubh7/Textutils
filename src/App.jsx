@@ -4,14 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar'
 import TextForm from './components/TextForm'
-// import About from './components/About'
+ import About from './components/About'
 import Alert from './components/Alert'
-// import {
-//   BrowserRouter as Router,
-//   Route,
-//   Link,
-//   Routes
-// } from "react-router-dom"
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Routes
+} from "react-router-dom"
 
 
 
@@ -51,20 +51,20 @@ const toggleMode = () => {
 
   return (
     <>
-    {/* <Router>    */}
-     <Navbar title="TextUtils" aboutText="about us" mode={mode} toggleMode={toggleMode}/>
+    <Router>   
+     <Navbar title="TextUtils" aboutText="about us" mode={mode} toggleMode={toggleMode}/> 
     <Alert alert={alert}/>
     <div className="container my-3">
-    <TextForm  showAlert={showAlert} heading="Enter the text you want to analyze below" mode={mode}  />
-      {/* <Routes>
-             <Route exact path='/' element={<TextForm  showAlert={showAlert} heading="Enter the text you want to analyze below" mode={mode}  />} />
+    {/* <TextForm  showAlert={showAlert} heading="Enter the text you want to analyze below" mode={mode}  /> */}
+      <Routes>
+             <Route exact path='/' element={<TextForm  showAlert={showAlert} heading="Try Textutils- Word Counter, Character Counter, Remove Extra Spaces" mode={mode}  />} />
            <Route exact path='about' element={<About />} />
-      </Routes> */}
+      </Routes>
 
     {/* <TextForm  showAlert={showAlert} heading="Enter the text you want to analyze below" mode={mode}  />
     <About/> */}
     </div>
-    {/* </Router> */}
+    </Router>
 
     </>
   )

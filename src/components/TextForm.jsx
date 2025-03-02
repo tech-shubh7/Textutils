@@ -48,7 +48,7 @@ const  handleOnChange = (event) => {
   return (
     <>
 <div className="container" style={{color: props.mode=='dark'?'white':'black'}}>
-    <h2>{props.heading}</h2>
+    <h2 className='mb-2'>{props.heading}</h2>
     <div className="mb-3">
     <textarea className="form-control" value={text} onChange={handleOnChange}  
      id="exampleFormControlTextarea1" rows="7" style={{backgroundColor: props.mode=='dark'?'grey':'white', color: props.mode=='dark'?'white':'black'}}></textarea>
@@ -61,10 +61,10 @@ const  handleOnChange = (event) => {
     </div>
     <div className="container my-3" style={{color: props.mode=='dark'?'white':'black'}}>
       <h2>Your text summary</h2>
-      <p>{text.split(" ").length} words and {text.length} characters</p>
+      <p>{text.split(" ").filter((element)=>{return element.length!==0}).length} words and {text.length} characters</p>
       <p>It will take {0.008*text.split(" ").length} Minutes to read</p>
       <h2>Preview</h2>
-      <p>{text.length>0?text:"Enter Something In Textbox To Preview It Here"}</p>
+      <p>{text.length>0?text:"Nothing to preview!"}</p>
     </div>
     </>
   )
