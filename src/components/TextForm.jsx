@@ -51,7 +51,7 @@ const  handleOnChange = (event) => {
     <h2 className='mb-2'>{props.heading}</h2>
     <div className="mb-3">
     <textarea className="form-control" value={text} onChange={handleOnChange}  
-     id="exampleFormControlTextarea1" rows="7" style={{backgroundColor: props.mode=='dark'?'grey':'white', color: props.mode=='dark'?'white':'black'}}></textarea>
+     id="exampleFormControlTextarea1" rows="7" style={{backgroundColor: props.mode=='dark'?'grey':'#98908e', color: props.mode=='dark'?'white':'black'}}></textarea>
     </div>
     <button className="btn btn-primary  mx-2 my-2" onClick={handleUpClick}>Convert To UPPERCASE</button>
     <button className="btn btn-primary mx-2 my-2" onClick={handleLoClick}>Convert To lowercase</button>
